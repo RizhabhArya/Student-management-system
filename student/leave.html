@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,5 +7,62 @@
 </head>
 <body>
     <div id="sidebar-container"></div>
+    
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave Request</title>
+    <link href="assets/css/leave.css" rel="stylesheet">
+    <!-- <script src="../assets/js/loadSidebar.js" defer></script> -->
+
+</head>
+<body class="flex">
+    <!-- Sidebar -->
+    <div id="sidebar-container"></div> <!-- Sidebar will be loaded here -->
+    <div class="flex h-screen pl-64"></div>
+    <!-- Main Content Area -->
+    <div class="ml-64 w-full">
+        <h1 class="text-3xl font-bold p-6">Leave Request Form</h1>
+        
+        <!-- Leave Request Form -->
+        <form id="leave-form" class="space-y-4 p-6 bg-gray-100 rounded-md shadow-md">
+            <div>
+                <label for="reason" class="block font-medium">Reason for Leave</label>
+                <textarea id="reason" name="reason" required class="w-full p-2 border border-gray-300 rounded-md" rows="4"></textarea>
+            </div>
+
+            <div>
+                <label for="start-date" class="block font-medium">Start Date</label>
+                <input type="date" id="start-date" name="start-date" required class="w-full p-2 border border-gray-300 rounded-md">
+            </div>
+
+            <div>
+                <label for="end-date" class="block font-medium">End Date</label>
+                <input type="date" id="end-date" name="end-date" required class="w-full p-2 border border-gray-300 rounded-md">
+            </div>
+
+            <div>
+                <label for="leave-type" class="block font-medium">Leave Type</label>
+                <select id="leave-type" name="leave-type" required class="w-full p-2 border border-gray-300 rounded-md">
+                    <option value="Medical">Medical</option>
+                    <option value="Personal">Personal</option>
+                    <option value="Vacation">Vacation</option>
+                </select>
+            </div>
+
+            <div class="flex justify-end">
+                <button type="submit" class="px-6 py-2 bg-blue-500 text-white rounded-md">Submit Request</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Load Sidebar dynamically -->
+    <script src="assets/js/loadSidebar.js"></script>
+    <script src="assets/js/leave.js"></script>
 </body>
 </html>
