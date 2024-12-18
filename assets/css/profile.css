@@ -1,0 +1,54 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #f8fafc; /* Light background for profile */
+}
+
+#sidebar-container {
+    width: 16rem; /* Keeps the sidebar at a fixed width */
+}
+
+main {
+    margin-left: 16rem; /* Ensures content doesn't overlap with sidebar */
+    padding: 2rem;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.profile-header h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.profile-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.profile-card h3 {
+    font-size: 1.5rem;
+    color: #4b5563; /* Dark gray for titles */
+}
+
+.profile-card .profile-info {
+    font-size: 1.1rem;
+    color: #6b7280; /* Lighter gray for content */
+    margin-bottom: 1.5rem;
+}
+
+.profile-card .profile-info label {
+    font-weight: bold;
+}
+
+.profile-card .profile-info .value {
+    color: #111827; /* Darker text for values */
+}

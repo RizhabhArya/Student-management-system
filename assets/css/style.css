@@ -1,0 +1,42 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    display: flex;
+}
+
+#sidebar-container {
+    width: 16rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#right-sidebar-container {
+    width: 20rem;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    margin-left: 16rem; /* Left Sidebar width */
+    margin-right: 20rem; /* Right Sidebar width */
+    padding-top: 20px;
+    flex: 1;
+}
+
+aside ul li a {
+    display: block;
+    padding: 0.5rem;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #2563eb;
+}

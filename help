@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMS - Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <div id="sidebar-container"></div>
+    
+    <div class="flex h-screen pl-64">
+
+    <div class="flex h-screen">
+        <!-- Left Sidebar -->
+        <aside class="w-64 bg-white p-6 shadow-md">
+            <h1 class="text-xl font-bold mb-8">📚 UMS</h1>
+            <nav>
+                <ul class="space-y-4">
+                    <li><a href="attendance.html" class="hover:text-blue-500">📷 Attendance</a></li>
+                    <li><a href="leave.html" class="hover:text-blue-500">📝 Leave Approvals</a></li>
+                    <li><a href="grades.html" class="hover:text-blue-500">📊 Grades</a></li>
+                    <li><a href="profile.html" class="hover:text-blue-500">👤 Profile</a></li>
+                    <li><a href="timetable.html" class="hover:text-blue-500">📅 Timetable</a></li>
+                    <li><a href="courses.html" class="hover:text-blue-500">📚 Courses</a></li>
+                    <li><a href="chatbot.html" class="hover:text-blue-500">💬 Chatbot</a></li>
+                    <li><a href="campus_life.html" class="hover:text-blue-500">🏫 Campus Life</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-6 overflow-y-auto">
+            <h2 class="text-2xl font-bold mb-4">Your Courses</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Course Cards -->
+                <div class="bg-white p-4 rounded-md shadow">
+                    <div class="text-sm text-gray-500">10:00 - 10:30</div>
+                    <h3 class="text-lg font-bold mt-2 text-yellow-600">🟧 User Interface Design</h3>
+                </div>
+                <div class="bg-white p-4 rounded-md shadow">
+                    <div class="text-sm text-gray-500">13:00 - 13:30</div>
+                    <h3 class="text-lg font-bold mt-2 text-purple-600">🟪 Programming in Java</h3>
+                </div>
+                <div class="bg-white p-4 rounded-md shadow">
+                    <div class="text-sm text-gray-500">16:00 - 16:30</div>
+                    <h3 class="text-lg font-bold mt-2 text-blue-600">🟦 Strategy of Marketing</h3>
+                </div>
+            </div>
+        </main>
+
+        <!-- Right Sidebar -->
+        <aside class="w-80 bg-white p-6 shadow-md">
+            <h2 class="text-xl font-bold mb-4">Schedule</h2>
+            <div class="text-gray-500">Calendar coming soon...</div>
+        </aside>
+    </div>
+
+</body>
+</html>
+
+
+
+
+<!-- Sidebar----------------------------------------------------------------------------------------------------->
+<!-- sidebar.html -->
+<aside class="w-64 bg-white p-6 shadow-md fixed h-full top-0 left-0">
+    <h1 class="text-xl font-bold mb-8">📚 UMS</h1>
+    <nav>
+        <ul class="space-y-4">
+            <li><a href="index.html" class="hover:text-blue-500">🏠 Dashboard</a></li>
+            <li><a href="attendance.html" class="hover:text-blue-500">📷 Attendance</a></li>
+            <li><a href="leave.html" class="hover:text-blue-500">📝 Leave Approvals</a></li>
+            <li><a href="grades.html" class="hover:text-blue-500">📊 Grades</a></li>
+            <li><a href="profile.html" class="hover:text-blue-500">👤 Profile</a></li>
+            <li><a href="timetable.html" class="hover:text-blue-500">📅 Timetable</a></li>
+            <li><a href="courses.html" class="hover:text-blue-500">📚 Courses</a></li>
+            <li><a href="chatbot.html" class="hover:text-blue-500">💬 Chatbot</a></li>
+            <li><a href="campus_life.html" class="hover:text-blue-500">🏫 Campus Life</a></li>
+        </ul>
+    </nav>
+</aside>
