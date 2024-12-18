@@ -1,0 +1,26 @@
+/* Custom Styles for Leave Page */
+#leave-form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#leave-form textarea,
+#leave-form input,
+#leave-form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#leave-requests td button {
+    padding: 5px 10px;
+    margin: 2px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#leave-requests td button:hover {
+    opacity: 0.8;
+}
