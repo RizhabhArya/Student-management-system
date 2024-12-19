@@ -34,6 +34,8 @@ document.addEventListener("DOMContentLoaded", () => {
             document.getElementById("right-sidebar-container").innerHTML = data;
         })
         .catch(err => console.error("Error loading right sidebar:", err));
+
+    
 });
 
 
