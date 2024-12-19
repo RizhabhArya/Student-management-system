@@ -1,0 +1,33 @@
+
+<!-- ### File 3: admin.html (Admin View) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Leave Requests</title>
+    <link href="../assets/css/leave.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="flex">
+    <div id="sidebar-container"></div>
+    <div class="ml-64 w-full p-6">
+        <h1 class="text-3xl font-bold mb-6">Leave Requests</h1>
+        <table class="min-w-full bg-white border border-gray-300">
+            <thead>
+                <tr>
+                    <th class="border px-4 py-2">Student Name</th>
+                    <th class="border px-4 py-2">Reason</th>
+                    <th class="border px-4 py-2">Start Date</th>
+                    <th class="border px-4 py-2">End Date</th>
+                    <th class="border px-4 py-2">Leave Type</th>
+                    <th class="border px-4 py-2">Status</th>
+                    <th class="border px-4 py-2">Action</th>
+                </tr>
+            </thead>
+            <tbody id="leave-requests"></tbody>
+        </table>
+    </div>
+    <script src="../assets/js/leaveRequests.js"></script>
+</body>
+</html>
